@@ -21,7 +21,7 @@ function Login() {
 
     const onsubmit= async (data)=>{
         // console.log(data)
-        axios.post('http://127.0.0.1:3000/users/login', data)
+        axios.post('https://eventapi.azurewebsites.net/users/login', data)
             .then(({data}) => {
                 if(data.token){
                     console.log(data.token)

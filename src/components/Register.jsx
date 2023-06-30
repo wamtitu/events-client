@@ -19,7 +19,7 @@ function Signup() {
     const onsubmit= async (data)=>{
         // event.preventDefault();
         try {
-            const response = await axios.post('http://127.0.0.1:3000/users/register', data)
+            const response = await axios.post('https://eventapi.azurewebsites.net/users/register', data)
             console.log('user created:',response)
         } catch (error) {
             console.log(error, ':user already exists')
