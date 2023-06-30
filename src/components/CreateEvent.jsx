@@ -19,7 +19,7 @@ function CreateEvent() {
     const navigate = useNavigate()
     const onsubmit= async (data)=>{
         // event.preventDefault();
-        const response = await axios.post('http://127.0.0.1:3000/events', data)
+        const response = await axios.post('https://eventapi.azurewebsites.net/events', data)
             console.log(response.data)
     }
 

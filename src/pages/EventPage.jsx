@@ -19,7 +19,7 @@ function EventPage() {
     }
     const handleDelete = async()=>{
         try {
-            await axios.delete(`http://127.0.0.1:3000/events/${id}`)
+            await axios.delete(`https://eventapi.azurewebsites.net/events/${id}`)
             console.log('delete succesfull')
             navigate('/events')
         } catch (error) {
