@@ -16,7 +16,7 @@
     useEffect(()=>{
       const fetchEvents = async ()=>{
         try {
-          const response = await axios.get('http://127.0.0.1:3000/events');
+          const response = await axios.get('https://eventapi.azurewebsites.net/events');
           setEvents(response.data);
         } catch (error) {
          alert('error ocuured when fetching events')

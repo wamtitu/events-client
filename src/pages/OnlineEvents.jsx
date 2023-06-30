@@ -7,7 +7,7 @@ function OnlineEvents() {
 
   const fetchOnlineEvents = async ()=>{
     try {
-      const response = await axios.get('http://127.0.0.1:3000/eventsonline')
+      const response = await axios.get('https://eventapi.azurewebsites.net/eventsonline')
 
       setEventsOnline([eventonline, ...response.data.recordset])
       // console.log(eventonline)

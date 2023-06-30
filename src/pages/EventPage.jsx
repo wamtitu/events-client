@@ -11,7 +11,7 @@ function EventPage() {
     const [event, setEvents]= useState([]);
     const fetchEventById = async()=>{
         try {
-            const response = await axios.get(`http://127.0.0.1:3000/events/${id}`)
+            const response = await axios.get(`https://eventapi.azurewebsites.net/events/${id}`)
             setEvents([...response.data])            
         } catch (error) {
             alert('error occured fetching event ')

@@ -22,7 +22,7 @@ function Updateevents() {
     const [eventUpdate, setEventUpdate] = useState({})
 
     const fetchEvent = async ()=>{
-        const event = await axios.get(`http://127.0.0.1:3000/events/${id}`)
+        const event = await axios.get(`https://eventapi.azurewebsites.net/events/${id}`)
         setEventUpdate(...event.data)
     }
 
@@ -31,7 +31,7 @@ function Updateevents() {
     },[])
 
     const onsubmit= async (data)=>{
-        await axios.put(`http://127.0.0.1:3000/events/update/${id}`, data)
+        await axios.put(`https://eventapi.azurewebsites.net/events/update/${id}`, data)
         navigate(`/events/${id}`)
         
     }

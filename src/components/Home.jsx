@@ -9,7 +9,7 @@ function Home() {
   useEffect(()=>{
     const fetch5 = async()=>{
       try {
-        const response = await axios.get('http://127.0.0.1:3000/events/top5')
+        const response = await axios.get('https://eventapi.azurewebsites.net/events/top5')
         setEvents([...response.data.recordset])
         console.log(...response.data.recordset)
       } catch (error) {

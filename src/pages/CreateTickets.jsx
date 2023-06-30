@@ -15,7 +15,7 @@ const schema = yup.object({
 function CreateTickets() {
     const onsubmit= async (data)=>{
         // event.preventDefault();
-        const response = await axios.post('http://127.0.0.1:3000/events/tickets', data)
+        const response = await axios.post('https://eventapi.azurewebsites.net/events/tickets', data)
             console.log(response.data)
     }
 

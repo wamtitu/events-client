@@ -9,7 +9,7 @@ function TicketsPage() {
     const handleTicket = async ()=>{
       
       try {
-        const response = await axios.get('http://127.0.0.1:3000/events/tickets')
+        const response = await axios.get('https://eventapi.azurewebsites.net/events/tickets')
           console.log(response.data)
           setTickets([...tickets, response.data])
           // console.log(tickets)
