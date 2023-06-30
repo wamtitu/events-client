@@ -1,0 +1,41 @@
+.mainContent-landing{
+    display: flex;
+    padding-top: 15vh;
+    /* gap: 20px; */
+    /* height: 75vh; */
+}
+.main{
+    width: 70%;
+    margin-left: 20px;
+}
+.aside{
+    float: right;
+}
+.asideNames{
+    border-left: 4px solid aqua;
+    border-bottom: 1px solid azure;
+    border-radius: 6px;
+    background: azure;
+    color: black;
+}
+/* .asideNames :hover{
+    background-color: black;
+    color: azure;
+} */
+.asideElement{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.eventscard{
+    margin-bottom: 10px; 
+    margin-right: 30px;
+    border: 1px solid azure;
+    border-radius: 10px;
+    height: 35vh;
+    background: rgb(247, 10, 227);
+    /* background-image: linear-gradient(to right, rgb(13, 253, 193), azure); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

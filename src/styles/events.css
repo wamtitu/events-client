@@ -1,0 +1,120 @@
+.events{
+    margin-top: 13vh;
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.eventsNav{  
+    
+    position: fixed;
+    top: 11vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* background: rgb(69, 75, 75); */
+    background: rgb(34, 30, 30);
+    border-radius: 10px;
+    border-right: 1px solid black; 
+    z-index: 9999;
+    width: 20%;
+    height: 75vh;
+    margin-top:30px;
+}
+.eventsButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+.eventsButtons button{
+    border: none;
+    background-color: rgb(34, 30, 30);
+    /* background: azure; */
+    margin-bottom:15px ;
+    height: 5rem;
+    color: azure;
+}
+.eventsButtons button:hover{
+    background: white;
+    color: black;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+.create-event{
+    height: 6rem;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(46, 45, 45);
+    color: azure;
+}
+.main-events{
+    margin-left: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%; 
+    margin-right: 0px;
+}
+.events-banner{
+    width: 90%;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4),
+              0 4px 6px -2px rgba(14, 13, 13, 0.8),
+              -4px 0 6px -2px rgba(10, 10, 10, 0.8),
+              4px 0 6px -2px rgba(12, 12, 12, 0.8);
+    margin: 20px auto;
+    background-image: url(../../images/pablo-heimplatz-ZODcBkEohk8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: azure;
+    align-items: center;
+}
+/* .events-banner h2{
+    align-self: center;
+} */
+
+
+
+
+.events-container{
+    display:grid;
+    grid-template-columns: auto auto;
+    width: 80%;
+    gap:20px;
+}
+.event-instance{
+    /* background: linear-gradient(to right, #E6E6FA, #CDB5CD); */
+    background-image: url(../../images/headway-F2KRf_QfCqw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+     color: white;
+    
+    border: 1px solid azure;
+    border-radius: 10px;
+    height: 40vh;
+}
+.events-container :hover{
+    /* background:linear-gradient(to right, #b2e1f8, #db8adb);  */
+    background: azure; 
+    color: black;
+    opacity: 1;
+}
+.event-elements{
+    margin-left: 20px;
+}
+.events-container button{
+    border: none;
+    background: none;
+    /* color: white; */
+    height: 2rem;
+    width: 30%;
+    float: right;
+    /* margin-right: 10px; */
+}

@@ -1,0 +1,45 @@
+body{
+    background: rgb(50, 54, 54);
+    color: white;
+}
+.create-event-form-container{
+    display: flex;
+    flex-direction: column;
+    margin:5% 30%;
+    margin-top: 17vh;
+    width: 40%;
+    border-radius: 10px;
+    color: black;
+}
+.create-event-form-container h2{
+    color: azure;
+}
+.event-form button{
+    margin-left: 12%;
+    width: 70%;
+    height: 3rem;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: aqua;
+    color: black;
+}
+
+.event-form textarea{
+    height: 10rem;
+    border-radius: 10px;
+}
+/* CSS */
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+  }
+  
+  @keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
