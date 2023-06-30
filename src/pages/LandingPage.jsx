@@ -9,9 +9,9 @@ import Myevents from './Myevents'
 import CreateEvent from '../components/CreateEvent'
 import TicketsPage from './TicketsPage'
 import EventPage from './EventPage'
-import OnsightEvents from './onsightEvents'
-import OnlineEvents from './onlineEvents'
-import Updateevents from './updateEvent'
+import OnsightEvents from './OnsightEvents'
+import OnlineEvents from './OnlineEvents'
+import Updateevents from './UpdateEvent'
 import CreateTickets from './CreateTickets'
 
 function LandingPage() {
