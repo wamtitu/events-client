@@ -1,5 +1,5 @@
 import { Link} from "react-router-dom"
-import '../styles/Navbarlanding.css'
+import '../styles/navbarlanding.css'
 import {CgEventbrite} from 'react-icons/cg'
 import { useNavigate } from "react-router-dom"
 import { Context } from "../context/usercontext"
