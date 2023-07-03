@@ -22,7 +22,7 @@ function OnlineEvents() {
     <>
     <div style={{marginTop:'15vh'}}>OnlineEvents</div>
     <h1>listing of online events</h1>
-    <p>there are {eventsonline.length} online events currently</p>
+    <p>there are {eventonline.length} online events currently</p>
     {eventonline&&eventonline.map((event, index)=>(
                 <div className='event-instance' key={index} >
                   <div className='event-elements'>   

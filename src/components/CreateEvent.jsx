@@ -20,7 +20,7 @@ function CreateEvent() {
     const onsubmit= async (data)=>{
         // event.preventDefault();
         const response = await axios.post('https://eventapi.azurewebsites.net/events', data)
-            console.log(response.data)
+        navigate('/events')
     }
 
     const {register, handleSubmit, formState:{errors}} = useForm({
