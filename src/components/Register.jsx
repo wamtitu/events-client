@@ -23,7 +23,7 @@ function Signup() {
         try {
             const response = await axios.post('https://eventapi.azurewebsites.net/users/register', data)
             navigate('/login')
-            console.log('user created:',response)
+            // console.log('user created:',response)
         } catch (error) {
             console.log(error, ':user already exists')
         }

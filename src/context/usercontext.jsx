@@ -31,7 +31,7 @@ export const ContextProvider = ({children})=>{
 
     useEffect(()=>{
         localStorage.setItem('user', JSON.stringify(state.user)) 
-        console.log(state.user)
+        // console.log(state.user)
     },[state.user])
 
     return(
