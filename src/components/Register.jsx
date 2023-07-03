@@ -3,6 +3,7 @@ import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from 'yup'
 import './../styles/register.css'
 import axios from 'axios'
+import {useNavigate} from 'react-router-dom'
 
 const schema = yup.object({
     fullname: yup.string().required(),
@@ -11,6 +12,7 @@ const schema = yup.object({
     confirmPassword: yup.string().required(),
 })
 function Signup() {
+    const navigate = useNavigate();
 
     const {register, handleSubmit, formState:{errors}} = useForm({
         resolver: yupResolver(schema)
@@ -20,6 +22,7 @@ function Signup() {
         // event.preventDefault();
         try {
             const response = await axios.post('https://eventapi.azurewebsites.net/users/register', data)
+            navigate('/login')
             console.log('user created:',response)
         } catch (error) {
             console.log(error, ':user already exists')
