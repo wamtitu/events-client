@@ -25,6 +25,7 @@ function CreateTickets() {
   return (
     <div style={{marginTop:'15vh'}}>
         <div className="create-event-form-container">
+            <h2>create ticket here, on the events page check on the id of the events you created and use it as the event id while creating the id</h2>
         <form className='event-form' onSubmit={handleSubmit(onsubmit)}>
             <h2 className='fade-in' >Create tickets</h2>
             <input placeholder="eventID" {...register('eventID')} />

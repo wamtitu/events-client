@@ -24,7 +24,7 @@ function Login() {
         axios.post('https://eventapi.azurewebsites.net/users/login', data)
             .then(({data}) => {
                 if(data.token){
-                    console.log(data.token)
+                    // console.log(data.token)
                     dispatch({type: "login success", payload: data})
                     alert('loggin success')
                     navigate('/events')

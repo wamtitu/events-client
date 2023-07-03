@@ -11,7 +11,7 @@ function Home() {
       try {
         const response = await axios.get('https://eventapi.azurewebsites.net/events/top5')
         setEvents([...response.data.recordset])
-        console.log(...response.data.recordset)
+        // console.log(...response.data.recordset)
       } catch (error) {
         console.log('an error occured fetching events')
       }
@@ -19,7 +19,7 @@ function Home() {
     fetch5()
   }, [])
 
-  console.log('events:',events)
+  // console.log('events:',events)
   return (
     <div className="mainContent-landing">
       <div className="main">
